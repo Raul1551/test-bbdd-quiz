@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pregunta12-style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <title>Pregunta 12</title>
+  <link rel="icon" href="img/favicon.png" />
+</head>
+
+<body>
+  <div class="container">
+    <section id="p0">
+      <h2>¿Que te gustaría incluir en tu viaje ideal? (III) (selecciona tantas respuestas como desees)</h2>
+    </section>
+    <section id="p1">
+      <div class="container-columns">
+        <div class="col">
+          <input type="checkbox" value="wellness" name="valores[]" class="form-control datoInput" id="check112"
+            onclick="disableSending(this)">
+          <label for="check112">
+            <img
+              src="https://res.cloudinary.com/udestinations/image/upload/v1657730066/quiz/parques-santurarios_z5seup.jpg"
+              alt="">
+            <h3>Parques y santuarios naturales</h3>
+          </label>
+
+        </div>
+        <div class="col">
+          <input type="checkbox" value="outdoors" name="valores[]" class="form-control datoInput" id="check212"
+            onclick="disableSending(this)">
+          <label for="check212">
+            <img
+              src="https://res.cloudinary.com/udestinations/image/upload/v1657730318/quiz/actividades-acuaticas_yaif1y.jpg"
+              alt="">
+            <h3>Actividades acuáticas</h3>
+          </label>
+
+        </div>
+        <div class="col">
+          <input type="checkbox" value="gastronomico" name="valores[]" class="form-control datoInput" id="check312"
+            onclick="disableSending(this)">
+          <label for="check312">
+            <img
+              src="https://res.cloudinary.com/udestinations/image/upload/v1657730182/quiz/clases-cocina-local_oqznnw.jpg"
+              alt="">
+            <h3>Clases de cocina local</h3>
+          </label>
+
+        </div>
+        <div class="col">
+          <input type="checkbox" value="historico" name="valores[]" class="form-control datoInput" id="check412"
+            onclick="disableSending(this)">
+          <label for="check412">
+            <img
+              src="https://res.cloudinary.com/udestinations/image/upload/v1657730379/quiz/actividades-artesania_ca1fsu.jpg"
+              alt="">
+            <h3>Actividades artesanales</h3>
+          </label>
+
+        </div>
+        <div class="col">
+          <input type="checkbox" value="wellness" name="valores[]" class="form-control datoInput" id="check512"
+            onclick="disableSending(this)">
+          <label for="check512">
+            <img
+              src="https://res.cloudinary.com/udestinations/image/upload/v1657730244/quiz/masajes-tratamientos_kcm2vy.jpg"
+              alt="">
+            <h3>Masajes relajantes y tratamientos</h3>
+          </label>
+
+        </div>
+        <div class="col">
+          <input type="checkbox" value="historico" name="valores[]" class="form-control datoInput" id="check612"
+            onclick="disableSending(this)">
+          <label for="check612">
+            <img
+              src="https://res.cloudinary.com/udestinations/image/upload/v1657730474/quiz/museos-exposiciones_ubb5uq.jpg"
+              alt="">
+            <h3>Museos y exposiciones</h3>
+          </label>
+
+        </div>
+      </div>
+    </section>
+    <section id="p2">
+      <div class="next">
+        <a class="boton-anterior" href="index-pregunta11.html"><u>Anterior</u></a>
+      </div>
+      <div class="prev">
+        <button type="button" class="boton-siguiente" id="boton"><u>Siguiente</u></button>
+      </div>
+    </section>
+    <div class="container-bar">
+      <div class="skill html">82%</div>
+    </div>
+  </div>
+
+  <script src="pregunta12.js"></script>
+  <script src="activaBoton.js"></script>
+</body>
+
+</html>

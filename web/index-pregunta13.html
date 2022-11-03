@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pregunta13-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Pregunta 13</title>
+    <link rel="icon" href="img/favicon.png" />
+</head>
+
+<body>
+    <div class="container">
+        <section id="p0">
+            <h2>¿Qué te traerías de recuerdo de tu viaje?(selecciona tantas respuestas como desees)</h2>
+        </section>
+        <section id="p1">
+            <div class="container-columns">
+                <div class="row align-items-start">
+                    <div class="col">
+                        <input type="checkbox" value="historico" name="valores[]" class="form-control datoInput" id="check113" onclick="disableSending(this)">
+                        <label for="check113">
+                            <h3>Foto o souvenir de algún monumento histórico o natural</h3>
+                        </label>
+                    </div>
+                    <div class="col">
+                        <input type="checkbox" value="gastronomico" name="valores[]" class="form-control datoInput" id="check213" onclick="disableSending(this)">
+                        <label for="check213">
+                            <h3>Productos de la zona</h3>
+                        </label>
+                    </div>
+                    <div class="col">
+                        <input type="checkbox" value="gastronomico" name="valores[]" class="form-control datoInput" id="check313" onclick="disableSending(this)">
+                        <label for="check313">
+                            <h3>Vinos del lugar</h3>
+                        </label>
+                    </div>
+                    <div class="col">
+                        <input type="checkbox" value="historico" name="valores[]" class="form-control datoInput" id="check413" onclick="disableSending(this)">
+                        <label for="check413">
+                            <h3>Artesanía local</h3>
+                        </label>
+                    </div>
+                    <div class="col">
+                        <input type="checkbox" value="wellness" name="valores[]" class="form-control datoInput" id="check513" onclick="disableSending(this)">
+                        <label for="check513">
+                            <h3>Productos y aceites esenciales para relajarme en casa</h3>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="p2">
+            <div class="next">
+              <a class="boton-anterior" href="index-pregunta12.html"><u>Anterior</u></a>
+            </div>
+            <div class="prev">
+                <button type="button" class="boton-siguiente" id="boton"><u>Siguiente</u></button>
+            </div>
+        </section>
+        <div class="container-bar">
+          <div class="skill html">89%</div>
+      </div>
+    </div>
+
+    <script src="pregunta13.js"></script>
+    <script src="activaBoton.js"></script>
+</body>
+
+</html>

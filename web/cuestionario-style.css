@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poiret One';
+}
+
+body {
+    background: #000;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+}
+.container{
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+h1{
+    text-align: center;
+    color: #ECD66C;
+    padding: 15px 0;
+    font-size: 30px;
+}
+h2{
+    text-align: center;
+    color: white;
+    padding: 15px 0;
+    font-size: 18px;
+}
+.container-form{
+    max-width: 600px;
+    margin: auto;
+    background-color: #4c4c4c;
+    color: white;
+    border: 2px solid;
+    border-color: #54ADBE;
+    padding: 20px;
+}
+label{
+    padding: 5px 0;
+}
+.email-name, 
+.email-surname,
+.email-mail,
+.email-phone{
+    padding: 10px 0;
+    display: grid;
+    margin: 0 0 5px 0;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+.firstName,
+.lastName,
+.e-mail,
+.phone-number{
+    background: #fff;
+    border: 1px solid #3498db;
+    width: 70%;
+    min-height: 35px;
+    display: inline-block;
+    padding: 10px 8px 10px 8px;
+    font-size: 16px;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    border-radius: 3px;
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 100%;
+}
+.container-button{
+    display: flex;
+    justify-content: center;
+}
+.discover-button{
+    background: rgb(219, 177, 35);
+    width: 100%;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin-top: 15px;
+    background-color: rgb(219, 177, 35);
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-family: inherit;
+    cursor: pointer;
+    border-width: 0px;
+    border-style: initial;
+    border-image: initial;
+    border-radius: 5px;
+}
+.discover-button:hover{
+    background: rgb(151, 118, 8);
+}
+.check-consentimiento{
+    padding: 20px 0;
+}
+p{
+    text-align: justify;
+    padding: 10px 0;
+    font-size: 18px;
+}
+

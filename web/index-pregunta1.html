@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pregunta1-style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <title>Pregunta 1</title>
+  <link rel="icon" href="img/favicon.png" />
+</head>
+
+<body>
+  <div class="container">
+    <section id="p0">
+      <h2>¿Con quién sueles viajar? (selecciona tantas respuestas como desees)</h2>
+    </section>
+    <div id="caja">Seleccionadas</div>
+    <section id="p1">
+      <div class="container-columns">
+        <div class="col">
+          <input type="checkbox" value="pareja" name="valores[]" id="check1" class="form-control datoInput"
+            onclick="disableSending(this)">
+          <label for="check1">
+            <img src="https://res.cloudinary.com/udestinations/image/upload/v1657624356/quiz/en-pareja_ea6ydg.jpg"
+              alt="">
+            <h3>En pareja</h3>
+          </label>
+        </div>
+        <div class="col">
+          <input type="checkbox" value="solo" name="valores[]" id="check2" class="form-control datoInput"
+            onclick="disableSending(this)">
+          <label for="check2">
+            <img src="https://res.cloudinary.com/udestinations/image/upload/v1657624543/quiz/solo_efvlbm.jpg" alt="">
+            <h3>Solo</h3>
+          </label>
+        </div>
+        <div class="col">
+          <input type="checkbox" value="amigos" name="valores[]" id="check3" class="form-control datoInput"
+            onclick="disableSending(this)">
+          <label for="check3">
+            <img src="https://res.cloudinary.com/udestinations/image/upload/v1657624416/quiz/con-amigos_b9nra6.jpg"
+              alt="">
+            <h3>Con amigos</h3>
+          </label>
+        </div>
+        <div class="col">
+          <input type="checkbox" value="grupos" name="valores[]" id="check4" class="form-control datoInput"
+            onclick="disableSending(this)">
+          <label for="check4">
+            <img
+              src="https://res.cloudinary.com/udestinations/image/upload/v1657624597/quiz/viajes-organizados_ck9csi.jpg"
+              alt="">
+            <h3>Grupos organizados / Agencias de viaje</h3>
+          </label>
+        </div>
+        <div class="col">
+          <input type="checkbox" value="familia" name="valores[]" id="check5" class="form-control datoInput"
+            onclick="disableSending(this)">
+          <label for="check5"><img
+              src="https://res.cloudinary.com/udestinations/image/upload/v1657624498/quiz/en-familia_prnewj.jpg" alt="">
+            <h3>En familia</h3>
+          </label>
+        </div>
+        <div class="col">
+          <input type="checkbox" value="otra" name="valores[]" id="check6" class="form-control datoInput"
+            onclick="disableSending(this)">
+          <label for="check6">
+            <img src="https://res.cloudinary.com/udestinations/image/upload/v1657624641/quiz/otra-manera_x5q4oo.jpg"
+              alt="">
+            <h3>Otra manera</h3>
+          </label>
+        </div>
+      </div>
+    </section>
+    <section id="p2">
+      <div class="next">
+        <a type="button" class="boton-anterior" href="index-cuestionario-inicial.html"><u>Anterior</u></a>
+      </div>
+      <div class="prev">
+        <button type="button" id="boton" class="boton-siguiente"><u>Siguiente</u></button>
+      </div>
+    </section>
+    <div class="container-bar">
+      <div class="skill html">0%</div>
+    </div>
+  </div>
+
+  <script src="pregunta1.js"></script>
+  <script src="activaBoton.js"></script>
+</body>
+<!-- href="http://127.0.0.1:5500/index-pregunta2.html" -->
+
+</html>

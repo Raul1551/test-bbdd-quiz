@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pregunta8-style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <title>Pregunta 8</title>
+  <link rel="icon" href="img/favicon.png" />
+</head>
+
+<body>
+  <div class="container">
+    <section id="p0">
+      <h2>Elige el lugar ideal para compartir tiempo con tu compañero de viaje (selecciona tantas respuestas como
+        desees)</h2>
+    </section>
+    <section id="p1">
+      <div class="container-columns">
+        <div class="col">
+          <input type="checkbox" value="wellness" name="valores[]" class="form-control datoInput" id="check18"
+            onclick="disableSending(this)">
+          <label for="check18">
+            <img src="https://res.cloudinary.com/udestinations/image/upload/v1657727430/quiz/jacuzzi_wwfvih.jpg" alt="">
+            <h3>Relajándote en un jacuzzi</h3>
+          </label>
+
+        </div>
+        <div class="col">
+          <input type="checkbox" value="outdoors" name="valores[]" class="form-control datoInput" id="check28"
+            onclick="disableSending(this)">
+          <label for="check28">
+            <img src="https://res.cloudinary.com/udestinations/image/upload/v1657727721/quiz/naturaleza_rkvcod.jpg"
+              alt="">
+            <h3>Disfrutando de la naturaleza</h3>
+          </label>
+
+        </div>
+        <div class="col">
+          <input type="checkbox" value="gastronomico" name="valores[]" class="form-control datoInput" id="check38"
+            onclick="disableSending(this)">
+          <label for="check38">
+            <img
+              src="https://res.cloudinary.com/udestinations/image/upload/v1657727534/quiz/restaurante-moda_cyxvzt.jpg"
+              alt="">
+            <h3>Comiendo en el restaurante de moda</h3>
+          </label>
+
+        </div>
+        <div class="col">
+          <input type="checkbox" value="astroturismo" name="valores[]" class="form-control datoInput" id="check48"
+            onclick="disableSending(this)">
+          <label for="check48">
+            <img src="https://res.cloudinary.com/udestinations/image/upload/v1657727992/quiz/estrellas_jw2dyu.jpg"
+              alt="">
+            <h3>Observando las estrellas en la tranquilidad de la noche</h3>
+          </label>
+
+        </div>
+        <div class="col">
+          <input type="checkbox" value="historico" name="valores[]" class="form-control datoInput" id="check58"
+            onclick="disableSending(this)">
+          <label for="check58">
+            <img src="https://res.cloudinary.com/udestinations/image/upload/v1657727626/quiz/plaza-historica_tse2le.jpg"
+              alt="">
+            <h3>Visitando una plaza o monumento histórico</h3>
+          </label>
+
+        </div>
+        <div class="col">
+          <input type="checkbox" value="gastronomico" name="valores[]" class="form-control datoInput" id="check68"
+            onclick="disableSending(this)">
+          <label for="check68">
+            <img src="https://res.cloudinary.com/udestinations/image/upload/v1657728101/quiz/vi%C3%B1edos_tlqmt4.jpg"
+              alt="">
+            <h3>Visitando una bodega y sus viñedos</h3>
+          </label>
+
+        </div>
+      </div>
+    </section>
+    <section id="p2">
+      <div class="next">
+        <a class="boton-anterior" href="index-pregunta7.html"><u>Anterior</u></a>
+      </div>
+      <div class="prev">
+        <button type="button" class="boton-siguiente" id="boton"><u>Siguiente</u></button>
+      </div>
+    </section>
+    <div class="container-bar">
+      <div class="skill html">50%</div>
+    </div>
+  </div>
+
+  <script src="pregunta8.js"></script>
+  <script src="activaBoton.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pregunta10-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Pregunta 10</title>
+    <link rel="icon" href="img/favicon.png" />
+</head>
+<body>
+    <div class="container">
+        <section id="p0">
+            <h2>¿Que te gustaría incluir en tu viaje ideal? (I) (selecciona tantas respuestas como desees)</h2>
+        </section>
+        <section id="p1">
+            <div class="container-columns">
+                  <div class="col">
+                    <input type="checkbox" value="wellness" name="valores[]" class="form-control datoInput" id="check110" onclick="disableSending(this)">
+                    <label for="check110">
+                      <img src="https://res.cloudinary.com/udestinations/image/upload/v1657728752/quiz/balnerario-spa_fxty58.jpg" alt="">
+                      <h3>Balneario | SPA | Aguas termales</h3>
+                    </label>
+                  </div>
+                  <div class="col">
+                    <input type="checkbox" value="historico" name="valores[]" class="form-control datoInput" id="check210" onclick="disableSending(this)">
+                    <label for="check210">
+                      <img src="https://res.cloudinary.com/udestinations/image/upload/v1657729051/quiz/festividades-locales_qrwcmk.jpg" alt="">
+                      <h3>Festividades locales especiales</h3>
+                    </label>
+                  </div>
+                  <div class="col">
+                    <input type="checkbox" value="gastronomico" name="valores[]" class="form-control datoInput" id="check310" onclick="disableSending(this)">
+                    <label for="check310">
+                      <img src="https://res.cloudinary.com/udestinations/image/upload/v1657728890/quiz/bodegas_jhkcqb.jpg" alt="">
+                      <h3>Cata de vinos | Visita a viñedos</h3>
+                    </label>
+                  </div>
+                  <div class="col">
+                    <input type="checkbox" value="historico" name="valores[]" class="form-control datoInput" id="check410" onclick="disableSending(this)">
+                    <label for="check410">
+                      <img src="https://res.cloudinary.com/udestinations/image/upload/v1657729306/quiz/visita-plazas_pnmiag.jpg" alt="">
+                      <h3>Visitas a plazas y monumentos</h3>
+                    </label>
+                  </div>
+                  <div class="col">
+                    <input type="checkbox" value="astroturismo" name="valores[]" class="form-control datoInput" id="check510" onclick="disableSending(this)">
+                    <label for="check510">
+                      <img src="https://res.cloudinary.com/udestinations/image/upload/v1657728975/quiz/miradores-nocturnos_xwjb4k.jpg" alt="">
+                      <h3>Miradores nocturnos</h3>
+                    </label>
+                  </div>
+                  <div class="col">
+                    <input type="checkbox" value="outdoors" name="valores[]" class="form-control datoInput" id="check610" onclick="disableSending(this)">
+                    <label for="check610">
+                      <img src="https://res.cloudinary.com/udestinations/image/upload/v1657729377/quiz/playas_wopvu1.jpg" alt="">
+                      <h3>Visitas a playas</h3>
+                    </label>
+                  </div>
+              </div>
+        </section>
+        <section id="p2">
+          <div class="next">
+            <a class="boton-anterior" href="index-pregunta9.html"><u>Anterior</u></a>
+          </div>
+          <div class="prev">
+              <button type="button" class="boton-siguiente" id="boton"><u>Siguiente</u></button>
+          </div>
+      </section>
+      <div class="container-bar">
+        <div class="skill html">66%</div>
+    </div>
+    </div>
+    <script src="pregunta10.js"></script>
+    <script src="activaBoton.js"></script>
+</body>
+</html>

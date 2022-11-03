@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pregunta3-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Pregunta 3</title>
+    <link rel="icon" href="img/favicon.png" />
+</head>
+
+<body>
+    <div class="container">
+        <section id="p0">
+            <h2>¿Cómo planificas tu viaje?</h2>
+        </section>
+        <section id="p1">
+            <div class="container-columns">
+                <div class="row align-items-start">
+                  <div class="col">
+                    <input type="radio" value="noplan" name="valores[]" class="form-control datoInput" id="check13" onclick="disableSending(this)">
+                    <label for="check13"><h3>Me gusta que me lo organicen / No tengo tiempo para planificar</h3></label>
+                  </div>
+                  <div class="col">
+                    <input type="radio" value="anticipation" name="valores[]" class="form-control datoInput" id="check23" onclick="disableSending(this)">
+                    <label for="check23"><h3>Con anticipación</h3></label>
+                  </div>
+                  <div class="col">
+                    <input type="radio" value="beforeDays" name="valores[]" class="form-control datoInput" id="check33" onclick="disableSending(this)">
+                    <label for="check33"><h3>Unos días antes</h3></label>
+                  </div>
+                  <div class="col">
+                    <input type="radio" value="march" name="valores[]" class="form-control datoInput" id="check43" onclick="disableSending(this)">
+                    <label for="check43"><h3>Prefiero ir sobre la marcha</h3></label>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <section id="p2">
+          <div class="next">
+            <a class="boton-anterior" href="index-pregunta2.html"><u>Anterior</u></a>
+          </div>
+          <div class="prev">
+              <button type="button" class="boton-siguiente" id="boton"><u>Siguiente</u></button>
+          </div>
+      </section>
+      <div class="container-bar">
+        <div class="skill html">14%</div>
+    </div>
+    </div>
+
+    <script src="pregunta3.js"></script>
+    <script src="activaBoton.js"></script>
+</body>
+
+</html>

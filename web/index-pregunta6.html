@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pregunta6-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Pregunta 6</title>
+    <link rel="icon" href="img/favicon.png" />
+</head>
+
+<body>
+    <div class="container">
+        <section id="p0">
+            <h2>A la hora de viajar...</h2>
+        </section>
+        <section id="p1">
+            <div class="container-columns">
+                <div class="row align-items-start">
+                    <div class="col">
+                        <input type="radio" value="budget" name="valores[]" class="form-control datoInput" id="check16" onclick="disableSending(this)">
+                        <label for="check16">
+                            <h3>Me gusta vivir y disfrutar el viaje al máximo sin importar el costo</h3>
+                        </label>
+                    </div>
+                    <div class="col">
+                        <input type="radio" value="specificlocations" name="valores[]" class="form-control datoInput" id="check26" onclick="disableSending(this)">
+                        <label for="check26">
+                            <h3>Intento que el viaje sea lo más económico posible, aunque eso suponga perderme algunas
+                                experiencias</h3>
+                        </label>
+                    </div>
+                    <div class="col">
+                        <input type="radio" value="maxtrip" name="valores[]" class="form-control datoInput" id="check36" onclick="disableSending(this)">
+                        <label for="check36">
+                            <h3>Solo me gasto el dinero en experiencias o lugares muy concretos, que realmente me van a
+                                permitir conocer el lugar y que no las puedo hacer en otro lugar</h3>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="p2">
+            <div class="next">
+              <a class="boton-anterior" href="index-pregunta5.html"><u>Anterior</u></a>
+            </div>
+            <div class="prev">
+                <button type="button" class="boton-siguiente" id="boton"><u>Siguiente</u></button>
+            </div>
+        </section>
+        <div class="container-bar">
+          <div class="skill html">35%</div>
+      </div>
+    </div>
+
+    <script src="pregunta6.js"></script>
+    <script src="activaBoton.js"></script>
+</body>
+
+</html>

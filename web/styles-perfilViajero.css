@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poiret One';
+}
+
+body {
+    background: #000;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    background: #000;
+    color: #ECD66C;
+    padding: 15px 0;
+    font-size: 45px;
+}
+
+#button-final{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(219, 177, 35);
+    width: 50%;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin-top: 15px;
+    background-color: rgb(219, 177, 35);
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-family: inherit;
+    cursor: pointer;
+    border-width: 0px;
+    border-style: initial;
+    border-image: initial;
+    border-radius: 5px;
+}
+
+h2{
+    text-align: center;
+    background: #000;
+    color: #54ADBE;
+    text-transform: uppercase;
+    padding: 15px 0;
+    font-size: 45px;
+}
+
+span{
+    font-weight: 900;
+    font-size: 30px;
+    color: #C9E5EB;
+}
+
+img{
+    display: block;
+    margin: auto;
+    max-width: 1200px;
+    max-height: 500px;
+    margin-top: 30px;
+   
+}
+
+a{
+    display: block;
+    text-align: center;
+    background: #000;
+    color: #ECD66C;
+    padding: 15px 0;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #4cb1a0;
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+    
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+    html, body {
+        width: 100%!important;
+             overflow-x:hidden;
+     }
+
+     img{
+        display: block;
+        margin: auto;
+        max-width: 730px;
+        max-height: 600px;
+        margin-top: 30px;
+       
+    }
+
+    a{
+        font-size: 25px;
+    }
+    
+}
+
+/* Medium devices (tablets, 768px and up) */
+/*@media (max-width: 768px) {
+    
+}*/
+/* Small devices (landscape phones, 576px and up ) */
+@media (max-width: 576px) {
+    html, body {
+        width: 100%!important;
+             overflow-x:hidden;
+     }
+
+     img{
+        display: block;
+        margin: auto;
+        max-width: 330px;
+        max-height: 200px;
+        margin-top: 30px;
+       
+    }
+
+    h1{
+        font-size: 35px;
+    }
+
+    a{
+        font-size: 20px;
+        text-decoration: underline;
+    }
+
+    a:active{
+        color: #4cb1a0;
+    }
+}

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>QUIZ</h1>
+        <p>¿Qué tipo de viajero eres?</p>
+    </header>
+
+    <div class="container">
+        <section id="p0">
+            <h3>1 - ¿Con quién sueles viajar? (Selecciona tantas respuestas como desees)</h3>
+            <label>
+                <input type="radio" value="1" name="p0" onclick="answer(0,this)"> En pareja
+            </label>
+            <label>
+                <input type="radio" value="2" name="p0" onclick="answer(0,this)"> Con amigos
+                seguridad
+            </label>
+            <label>
+                <input type="radio" value="3" name="p0" onclick="answer(0,this)"> En familia
+                necesario
+            </label>
+            <label>
+                <input type="radio" value="4" name="p0" onclick="answer(0,this)"> Solo
+            </label>
+            <label>
+                <input type="radio" value="5" name="p0" onclick="answer(0,this)"> Grupos organizados, agencias de viajes
+            </label>
+            <label>
+                <input type="radio" value="6" name="p0" onclick="answer(0,this)"> Otra manera
+            </label>
+        </section>
+        <section id="p1">
+            <h3>2 - ¿Cómo te ha afectado el COVID-19 a tu forma de viajar?</h3>
+            <label>
+                <input type="radio" value="1" name="p0" onclick="answer(0,this)"> No he dejado de viajar
+            </label>
+            <label>
+                <input type="radio" value="2" name="p0" onclick="answer(0,this)"> Viajo, pero siempre priorizando mi
+                seguridad
+            </label>
+            <label>
+                <input type="radio" value="3" name="p0" onclick="answer(0,this)"> Solo viajaré cuando sea completamente
+                necesario
+            </label>
+            <label>
+                <input type="radio" value="4" name="p0" onclick="answer(0,this)"> No viajo
+            </label>
+        </section>
+        <section id="p2">
+            <h3>3 - ¿Cómo planificas tu viaje?</h3>
+            <label>
+                <input type="radio" value="1" name="p1" onclick="answer(1,this)"> Me gusta que me lo organizen / No
+                tengo tiempo para planificar
+            </label>
+            <label>
+                <input type="radio" value="2" name="p1" onclick="answer(1,this)"> Con anticipación
+            </label>
+            <label>
+                <input type="radio" value="3" name="p1" onclick="answer(1,this)"> Unos días antes
+            </label>
+            <label>
+                <input type="radio" value="4" name="p1" onclick="answer(1,this)"> Prefiero ir sobre la marcha
+            </label>
+        </section>
+        <section id="p3">
+            <h3>4 - ¿Qué es lo más importante a la hora de planificar tu viaje? (Selecciona tantas respuestas como
+                desees)</h3>
+            <label>
+                <input type="radio" value="1" name="p2" onclick="answer(2,this)"> Planificar la lista de restaurantes a
+                los que acudirás o los platos típicos a probar
+            </label>
+            <label>
+                <input type="radio" value="2" name="p2" onclick="answer(2,this)"> Diseñar la ruta e investigar los
+                rincones que tienes que visitar
+            </label>
+            <label>
+                <input type="radio" value="3" name="p2" onclick="answer(2,this)"> Asegurar que el hospedaje tenga spa o
+                terapias para cuidarte
+            </label>
+            <label>
+                <input type="radio" value="4" name="p2" onclick="answer(2,this)"> Revisar reseñas de rutas de trekking o
+                actividades al aire libre disponibles
+            </label>
+            <label>
+                <input type="radio" value="5" name="p2" onclick="answer(2,this)"> Buscar una zona donde poder observar
+                el cielo y las estrellas
+            </label>
+        </section>
+        <section id="p4">
+            <h3>5 - Lo más importante para mí durante mi viaje es...(selecciona tantas respuestas como desees)</h3>
+            <label>
+                <input type="radio" value="1" name="p3" onclick="answer(3,this)"> El hotel y sus comodidades
+            </label>
+            <label>
+                <input type="radio" value="2" name="p3" onclick="answer(3,this)"> Lo conocido que es el lugar
+            </label>
+            <label>
+                <input type="radio" value="3" name="p3" onclick="answer(3,this)"> El entorno
+            </label>
+            <label>
+                <input type="radio" value="4" name="p3" onclick="answer(3,this)"> Las actividades que puedo realizar
+            </label>
+            <label>
+                <input type="radio" value="5" name="p3" onclick="answer(3,this)"> Visitar lugares que nadie conoce
+            </label>
+        </section>
+        <section id="p5">
+            <h3>6 - A la hora de viajar...</h3>
+            <label>
+                <input type="radio" value="1" name="p4" onclick="answer(4,this)"> Intento que el viaje sea lo más
+                económico posible, aunque eso suponga perderme algunas experiencias
+            </label>
+            <label>
+                <input type="radio" value="2" name="p4" onclick="answer(4,this)"> Solo me gasto el dinero en
+                experiencias o lugares muy concretos, que realmente me van a permitir conocer el lugar y que no las
+                puedo hacer en otro lugar
+            </label>
+            <label>
+                <input type="radio" value="3" name="p4" onclick="answer(4,this)"> Me gusta vivir y disfrutar mi viaje al
+                máximo sin importar el costo
+            </label>
+        </section>
+        <section id="p6">
+            <h3>7 - ¿Cómo es tu viaje ideal? (Selecciona tantas respuestas como desees)</h3>
+            <label>
+                <input type="radio" value="1" name="p4" onclick="answer(4,this)"> Donde vivir experiencias y sensaciones
+                únicas observando el cielo estrellado y sus constelaciones
+            </label>
+            <label>
+                <input type="radio" value="2" name="p4" onclick="answer(4,this)"> Donde poder desconectar y cuidar de mi
+                mente y cuerpo
+            </label>
+            <label>
+                <input type="radio" value="3" name="p4" onclick="answer(4,this)"> Lleno de visitas que me permitan
+                conocer más la historia y cultura del destino y no perderme nada
+            </label>
+            <label>
+                <input type="radio" value="4" name="p4" onclick="answer(4,this)"> Que me permita conectar con la
+                naturaleza y sentir que aporto a su sostenibilidad
+            </label>
+            <label>
+                <input type="radio" value="5" name="p4" onclick="answer(4,this)"> Que me permita experimentar con la
+                gastronomía y con la cultura local
+            </label>
+        </section>
+        <section id="p7">
+            <h3>8 - Elige el lugar ideal para compartir tiempo con tu compañero de viaje (selecciona tantas respuestas
+                como desees)</h3>
+            <label>
+                <input type="radio" value="1" name="p4" onclick="answer(4,this)"> Relajándome en un jacuzzi
+            </label>
+            <label>
+                <input type="radio" value="2" name="p4" onclick="answer(4,this)"> Comiendo en el restaurante de moda
+            </label>
+            <label>
+                <input type="radio" value="3" name="p4" onclick="answer(4,this)"> Visitando una plaza o un monumento
+                histórico
+            </label>
+            <label>
+                <input type="radio" value="4" name="p4" onclick="answer(4,this)"> Disfrutando de la naturaleza
+            </label>
+            <label>
+                <input type="radio" value="5" name="p4" onclick="answer(4,this)"> Observando las estrellas en la
+                tranquilidad de la noche
+            </label>
+            <label>
+                <input type="radio" value="6" name="p4" onclick="answer(4,this)"> Visitando una bodega y sus viñedos
+            </label>
+        </section>
+        <section id="p8">
+            <h3>9 - ¿Qué tipo de viajes prefieres? (selecciona tantas respuestas
+                como desees)</h3>
+            <label>
+                <input type="radio" value="1" name="p4" onclick="answer(4,this)"> Siempre que puedo salgo del país en
+                avión para conocer cuanto más mundo mejor
+            </label>
+            <label>
+                <input type="radio" value="2" name="p4" onclick="answer(4,this)"> En destino, prefiero moverme por
+                carretera y apostar por el turismo local y slow
+            </label>
+            <label>
+                <input type="radio" value="3" name="p4" onclick="answer(4,this)"> Suelo elegir transportes más
+                sostenibles como el tren y descubrir destinos cercanos
+            </label>
+            <label>
+                <input type="radio" value="4" name="p4" onclick="answer(4,this)"> Me es indiferente, el que más me
+                convenga en cada situación
+            </label>
+        </section>
+        <section id="p9">
+            <h3>10 - ¿Qué te gustaría incluir en tu viaje ideal? (I) (selecciona tantas respuestas
+                como desees)</h3>
+            <label>
+                <input type="radio" value="1" name="p4" onclick="answer(4,this)"> Balneario | SPA | Aguas termales
+            </label>
+            <label>
+                <input type="radio" value="2" name="p4" onclick="answer(4,this)"> Cata de vinos | Visita a viñedos
+            </label>
+            <label>
+                <input type="radio" value="3" name="p4" onclick="answer(4,this)"> Miradores nocturnos
+            </label>
+            <label>
+                <input type="radio" value="4" name="p4" onclick="answer(4,this)"> Festividades locales especiales
+            </label>
+            <label>
+                <input type="radio" value="5" name="p4" onclick="answer(4,this)"> Visitas a plazas y monumentos
+            </label>
+            <label>
+                <input type="radio" value="6" name="p4" onclick="answer(4,this)"> Visitas a playas
+            </label>
+        </section>
+        <section id="p10">
+            <h3>11 - ¿Qué te gustaría incluir en tu viaje ideal? (II) (selecciona tantas respuestas
+                como desees)</h3>
+            <label>
+                <input type="radio" value="1" name="p4" onclick="answer(4,this)"> Restaurantes y bares
+            </label>
+            <label>
+                <input type="radio" value="2" name="p4" onclick="answer(4,this)"> Obras de teatro | Conciertos
+            </label>
+            <label>
+                <input type="radio" value="3" name="p4" onclick="answer(4,this)"> Paseos en barcos | Cruceros | Sunsets
+            </label>
+            <label>
+                <input type="radio" value="4" name="p4" onclick="answer(4,this)"> Astroturismo
+            </label>
+            <label>
+                <input type="radio" value="5" name="p4" onclick="answer(4,this)"> Retiros espirituales
+            </label>
+            <label>
+                <input type="radio" value="6" name="p4" onclick="answer(4,this)"> Autopreparación de productos (aceite
+                de oliva, vino, etc.)
+            </label>
+        </section>
+        <section id="p11">
+            <h3>12 - ¿Qué te gustaría incluir en tu viaje ideal? (III) (selecciona tantas respuestas
+                como desees)</h3>
+            <label>
+                <input type="radio" value="1" name="p4" onclick="answer(4,this)"> Parques y santuarios naturales
+            </label>
+            <label>
+                <input type="radio" value="2" name="p4" onclick="answer(4,this)"> Clases de cocina local
+            </label>
+            <label>
+                <input type="radio" value="3" name="p4" onclick="answer(4,this)"> Masajes relajantes y tratamientos
+            </label>
+            <label>
+                <input type="radio" value="4" name="p4" onclick="answer(4,this)"> Actividades acuáticas
+            </label>
+            <label>
+                <input type="radio" value="5" name="p4" onclick="answer(4,this)"> Actividades de artesanía
+            </label>
+            <label>
+                <input type="radio" value="6" name="p4" onclick="answer(4,this)"> Museos y exposiciones
+            </label>
+        </section>
+        <section id="p12">
+            <h3>13 - ¿Qué te traerías de recuerdo de tu viaje? (Selecciona tantas respuestas como desees)</h3>
+            <label>
+                <input type="radio" value="1" name="p4" onclick="answer(4,this)"> Foto o souvenir de algún monumento histórico o natural
+            </label>
+            <label>
+                <input type="radio" value="2" name="p4" onclick="answer(4,this)"> Productos de la zona
+            </label>
+            <label>
+                <input type="radio" value="3" name="p4" onclick="answer(4,this)"> Vinos del lugar
+            </label>
+            <label>
+                <input type="radio" value="4" name="p4" onclick="answer(4,this)"> Artesanía local
+            </label>
+            <label>
+                <input type="radio" value="5" name="p4" onclick="answer(4,this)"> Productos y aceites esenciales para relajarme en casa
+            </label>
+        </section>
+        <section id="p13">
+            <h3>14 - ¿Qué tipo de viaje hiciste en 2021? (Selecciona tantas respuestas como desees)</h3>
+            <label>
+                <input type="radio" value="1" name="p4" onclick="answer(4,this)"> Ciudades con encanto
+            </label>
+            <label>
+                <input type="radio" value="2" name="p4" onclick="answer(4,this)"> Ruta de playas
+            </label>
+            <label>
+                <input type="radio" value="3" name="p4" onclick="answer(4,this)"> Escapadas a Spas o talleres de yoga al aire libre
+            </label>
+            <label>
+                <input type="radio" value="4" name="p4" onclick="answer(4,this)"> Rutas de Castillos o Patrimonio de la Humanidad
+            </label>
+            <label>
+                <input type="radio" value="5" name="p4" onclick="answer(4,this)"> Visité bodegas y viñedos
+            </label>
+            <label>
+                <input type="radio" value="6" name="p4" onclick="answer(4,this)"> Observación de las perseidas
+            </label>
+            <label>
+                <input type="radio" value="7" name="p4" onclick="answer(4,this)"> Rutas de trekking
+            </label>
+            <label>
+                <input type="radio" value="8" name="p4" onclick="answer(4,this)"> Reservé restaurantes reconocidos en zonas alejadas
+            </label>
+        </section>
+
+        <button onclick="correct()">CORREGIR</button>
+        <h2>Cantidad acertadas: <span id="result"></span></h2>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
