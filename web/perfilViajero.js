@@ -131,7 +131,7 @@ function elQueMasAparece() {
 
     const resultJson = JSON.stringify(result);
 
-    fetch('http://localhost:3000/prueba', {
+    fetch('http://localhost:3000/create', {
         method: 'POST',
         body: resultJson
     });

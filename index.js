@@ -1,10 +1,8 @@
-import * as  dotenv from 'dotenv';
 import express from 'express';
 import cors from 'cors';
 import {connector} from './src/mysql-conector.js'
 
 
-dotenv.config();
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -32,7 +30,7 @@ app.get('/', (req, res) => {
 
 // INSERTAR DATOS EN LA BASE DE DATOS
 
-app.post('/prueba', (req, res) => {
+app.post('/create', (req, res) => {
     bdatos = req.body;
     const insert = `INSERT INTO users (id, usuario) VALUES (NULL, '${JSON.stringify(bdatos)}')`;
     connector.query(insert, (err, result) => {
@@ -42,7 +40,6 @@ app.post('/prueba', (req, res) => {
     });
 
 });
-
 
 app.listen(port, () => {
     console.log(`Estoy ejecutándome en http://localhost:${port}`);
