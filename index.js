@@ -1,10 +1,10 @@
 import express from 'express';
 import cors from 'cors';
 import {connector} from './src/mysql-conector.js'
+import { PORT } from './config.js';
 
 
 const app = express();
-const port = process.env.PORT || 3000;
 
 let bdatos;
 
@@ -41,6 +41,5 @@ app.post('/create', (req, res) => {
 
 });
 
-app.listen(port, () => {
-    console.log(`Estoy ejecutándome en http://localhost:${port}`);
-});
+app.listen(PORT);
+console.log('Server on Port', PORT);

@@ -1,10 +1,11 @@
 import mysql from 'mysql';
-
+import { DB_DATABASE, DB_HOST, DB_PASSWORD, DB_PORT, DB_USER } from '../config.js';
 const connector = mysql.createConnection({
-    host: process.env.DB_HOST ||'localhost',
-    user: process.env.DB_USER ||'root',
-    password: process.env.DB_PASSWORD ||'1234',
-    database: process.env.DB_DATABASE ||'quiz'
+    host: DB_HOST,
+    user: DB_USER,
+    password: DB_PASSWORD,
+    database: DB_DATABASE,
+    port: DB_PORT
 });
 
 const conectar = () => {
@@ -14,4 +15,4 @@ const conectar = () => {
     });
 }
 
-export{connector}
+export { connector }
