@@ -32,7 +32,7 @@ app.get('/', (req, res) => {
 
 app.post('/create', (req, res) => {
     bdatos = req.body;
-    const insert = `INSERT INTO users (id, usuario) VALUES (NULL, '${JSON.stringify(bdatos)}')`;
+    const insert = `INSERT INTO users (id, nombre) VALUES (NULL, '${JSON.stringify(bdatos)}')`;
     connector.query(insert, (err, result) => {
         if (err) throw err;
         res.send(JSON.stringify('Datos guardados'));
