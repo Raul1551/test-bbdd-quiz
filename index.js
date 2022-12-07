@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
 });
     
 
-// INSERTAR DATOS EN LA BASE DE DATOS
+// INSERTAR DATOS EN LA BASE DE DATOSs
 
 app.post('/create', (req, res) => {
     bdatos = req.body;
